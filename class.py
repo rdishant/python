@@ -18,6 +18,6 @@ print(L)'''
 #4
 '''l1=[7,6,4]
 l2=[2,3,5]
-L={k:v in k,v in map(lambda a,b:(a,b**2) if a>b else (b,a**2),l1,l2)}
+L={k:v for k,v in map(lambda a,b:(a,b**2) if a>b else (b,a**2),l1,l2)}
 print(L)   
 '''
